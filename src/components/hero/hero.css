@@ -1,0 +1,143 @@
+.hero {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 8rem;
+    background: linear-gradient(19deg, #FDFDFD 0%, #41A9C8 100%);
+    transition: all 2s ease-in-out;
+}
+
+.hero-content span {
+    color: #3da7c7;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 40%;
+    filter: drop-shadow(10px 10px 6px rgba(0, 0, 0, 0.218));
+}
+
+.hero-content h1 {
+    
+    color: #024a61;
+    font-size: 60px;
+}
+
+.hero-content p {
+    font-size: large;
+}
+
+.hero__button {
+    color: #41a9c8;
+    background: #1b1d1e;
+    border: 1px solid #41a9c8;
+    cursor: pointer;
+    padding: 1rem 1rem;
+    border-radius: 20px;
+    transition: all 600ms ease-in-out;
+    font-weight: 500;
+    margin: 2rem 3rem;
+}
+
+.hero__button:hover {
+    color: #1b1d1e;
+    background: transparent;
+    transition: all 600ms ease-in-out;
+    border: 1px solid #1b1d1e;
+}
+
+
+/*desktops - higher resolution*/
+@media (min-width: 1281px){
+
+}
+
+/*laptops, desktops*/
+@media (min-width: 1025px) and (max-width: 1280px) {
+    
+}
+
+/*tablets, ipads (portrait)*/
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    .hero-content h1 {
+        font-size: xx-large;
+    }
+    .hero-content button {
+        width: 60%;
+    }
+    .hero img {
+        width: 65%;
+        filter: drop-shadow(6px 7px 5px rgba(0, 0, 0, 0.218));
+    }
+    .hero {
+        padding: 2rem 4rem;
+    }
+}
+
+/*tablets, ipads (landscape)*/
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    .hero-content h1 {
+        font-size: xx-large;
+    }
+    .hero-content button {
+        width: 60%;
+    }
+    .hero img {
+        width: 100%;
+        filter: drop-shadow(10px 7px 5px rgba(0, 0, 0, 0.218));
+        
+    }
+    .hero {
+        padding: 2rem 4rem;
+    }
+}
+
+/*low resolution tablets, mobiles (landscape)*/
+@media (min-width: 481px) and (max-width: 767px) {
+    .hero-content h1 {
+        font-size: xx-large;
+    }
+
+    .hero-content p {
+        font-size: small;
+    }
+
+    .hero-content button {
+        width: 60%;
+        padding: 0.5rem 0.5rem;
+        font-size: x-small;
+    }
+    .hero img {
+        width: 100%;
+        filter: drop-shadow(10px 7px 5px rgba(0, 0, 0, 0.218));
+        
+    }
+
+}
+
+/*smartphones mobiles (portrait)*/
+@media (min-width: 100px) and (max-width: 480px) {
+
+    .hero {
+        padding: 2rem 1.5rem;
+    }
+    .hero img{
+        width: 70%;
+        filter: drop-shadow(10px 7px 5px rgba(0, 0, 0, 0.218));
+    }
+
+    .hero-content p {
+        font-size: xx-small;
+    }
+
+    .hero-content h1 {
+        font-size: x-large;
+        
+    }
+}

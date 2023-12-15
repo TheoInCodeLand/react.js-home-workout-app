@@ -1,0 +1,197 @@
+.advert-home {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    background: linear-gradient(19deg, #ffffff 0%, #a3590455 100%);
+        box-shadow:  5px 20px 10px #99999933, -10px -5px 100px #c8895f60;
+    margin: 0.5rem 0.5rem;
+    padding: 2rem 2rem;
+    color: rgb(138, 138, 138);
+    border-radius: 0px;
+    
+}
+
+.advert-home img {
+    width: 60%;
+}
+
+.advert-home:hover {
+    animation: heartbeat 3s ease-in-out infinite both;
+    transition: all 2s ease-in-out;
+}
+
+@keyframes heartbeat {
+    from {
+      transform: scale(1);
+      transform-origin: center center;
+      animation-timing-function: ease-out;
+    }
+    10% {
+      transform: scale(0.91);
+      animation-timing-function: ease-in;
+    }
+    17% {
+      transform: scale(0.98);
+      animation-timing-function: ease-out;
+    }
+    33% {
+      transform: scale(0.87);
+      animation-timing-function: ease-in;
+    }
+    45% {
+      transform: scale(1);
+      animation-timing-function: ease-out;
+    }
+  }
+
+.advert-home .title {
+    font-weight: bold;
+    color: #616161;
+    font-size: 1.5rem;
+    filter: drop-shadow( 5px 5px 5px rgba(128, 128, 128, 0.586));
+}
+
+.advert-home .brand {
+    font-size: 1rem;
+    font-weight: bolder;
+}
+
+.advert-home .price {
+    color: green;
+    font-weight: 500;
+    font-size: 1.3rem;
+}
+
+.advert-home .sale{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 0.9rem;
+    color: rgb(255, 68, 0);
+    font-weight: normal;
+}
+
+.advert-home a{
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    background: #41a8c8cc;
+    border: 1px solid #41a8c8cc;
+    cursor: pointer;
+    padding: 0.7em;
+    border-radius: 20px;
+    transition: all 600ms ease-in-out;
+    font-size: small;
+    text-decoration: none;
+    width: 90%;
+}
+
+.advert-home a:hover {
+    color: #41a8c8cc;
+    background: transparent;
+    transition: all 600ms ease-in-out;
+}
+
+
+
+
+
+
+/*desktops - higher resolution*/
+@media (min-width: 1281px) {
+
+}
+
+/*laptops, desktops*/
+@media (min-width: 1025px) and (max-width: 1280px) {
+
+}
+
+/*tablets, ipads (portrait)*/
+@media (min-width: 768px) and (max-width: 1024px) {
+    .advert-home{
+        margin: 1rem 0.5rem;
+    }
+
+    .advert-home .title {
+        font-size: medium;
+    }
+}
+
+/*tablets, ipads (landscape)*/
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+
+}
+
+/*low resolution tablets, mobiles (landscape)*/
+@media (min-width: 481px) and (max-width: 767px) {
+
+    .advert-home{
+        display: flex;
+        margin: 0.4rem 1rem;
+        width: 85%;
+        align-items: center;
+        background: #f8a1a13f;
+        box-shadow:  5px 5px 5px #00000033,
+                -2px -2px 50px #f58a8a38;
+    }
+
+    .advert-home .title {
+        font-size: 1.2rem;
+    }
+
+    .advert-home .brand {
+        font-size: 0.9rem;
+    }
+
+    .advert-home .price {
+        font-size: 1rem;
+    }
+
+    .advert-home .sale {
+        font-size: 0.6rem;
+    }
+
+    .advert-home a {
+        font-size: 0.6rem;
+        padding: 0.4rem;
+        width: 50%;
+
+    }
+
+    .advert-home img {
+        width: 30%;
+    }
+}
+
+/*smartphones mobiles (portrait)*/
+@media (min-width: 250px) and (max-width: 480px) 
+{
+    .advert-home{
+        background: linear-gradient(19deg, #ffffff 0%, #a3590455 100%);
+        box-shadow:  5px 20px 10px #99999933, -10px -5px 100px #c8895f60;
+        margin: 1rem 0.5rem;
+        padding: 2rem 4.5rem;
+    }
+
+    .advert-home .title {
+        font-size: 0.5rem;
+    }
+
+    .advert-home .brand {
+        font-size: 0.4rem;
+    }
+
+    .advert-home .price {
+        font-size: 0.5rem;
+    }
+
+    .advert-home .sale {
+        font-size: 0.4rem;
+    }
+
+    .advert-home a {
+        font-size: 0.4rem;
+        padding: 0.4rem;
+        width: 50%;
+
+    }
+}
